@@ -8,5 +8,9 @@ import { UserEntity } from './user.entity';
   imports: [TypeOrmModule.forFeature([UserEntity])],
   controllers: [UserController],
   providers: [UserService],
+  //we added AuthMiddleware and made it global but
+  //UserService is not global so we need to explicitly
+  //export it here
+  exports: [UserService],
 })
 export class UserModule {}
