@@ -71,3 +71,19 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Notes on adding a migration
+
+Add item to an existing \*.entity.ts file and then generate the migration file
+
+must include path to the migrations folder
+npm run db:create src/migrations/AddUsernameToUser
+
+npm run db:migrate
+
+if errors happen, run
+npm run db:drop
+
+## packages
+
+ValidationPipe requires the install of class-validator & class-transformer
