@@ -11,5 +11,5 @@ const config: PostgresConnectionOptions = {
   synchronize: false,
   migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
 };
-
+console.log('config: ', config);
 export default config;

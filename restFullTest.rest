@@ -1,13 +1,14 @@
 ###
-
+test pw: test
+johndoe pw: JohnDoe
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
     "user": {
-        "password": "JohnDoe",
-        "username": "johndoe",
-        "email": "test@test.com"
+        "password": "test",
+        "username": "test",
+        "email": "test2@test.com"
     }
 }
 
@@ -18,8 +19,8 @@ Content-Type: application/json
 
 {
     "user": {
-        "password": "JohnDoe",
-        "email": "test@test.com"
+        "password": "test",
+        "email": "test2@test.com"
     }
 }
 
