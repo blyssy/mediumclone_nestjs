@@ -81,3 +81,14 @@ Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOi
         "tagList": ["reactjs", "angularjs", "dragons"]
     }
 }
+
+###
+
+GET http://localhost:3000/articles?author=johndoe
+Content-Type: application/json
+
+{
+    
+}
+
+###
