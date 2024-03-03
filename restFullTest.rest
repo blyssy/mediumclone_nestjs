@@ -84,11 +84,22 @@ Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOi
 
 ###
 
-GET http://localhost:3000/articles?author=johndoe
+GET http://localhost:3000/articles
 Content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwidXNlcm5hbWUiOiJqb2huZG9lIiwiaWF0IjoxNzA5NDE4MDI1LCJleHAiOjE3MTAwMjI4MjV9.mxg3Zs-0FR_FJezdP6Ds-68ED3anc88ercMaWnDVp3o
 
 {
     
 }
 
 ###
+
+POST http://localhost:3000/articles/how-to-train-your-dragon-her9kh/favorite
+Content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwidXNlcm5hbWUiOiJqb2huZG9lIiwiaWF0IjoxNzA5NDE4MDI1LCJleHAiOjE3MTAwMjI4MjV9.mxg3Zs-0FR_FJezdP6Ds-68ED3anc88ercMaWnDVp3o
+
+###
+
+DELETE  http://localhost:3000/articles/how-to-train-your-dragon-her9kh/favorite
+Content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwidXNlcm5hbWUiOiJqb2huZG9lIiwiaWF0IjoxNzA5NDE4MDI1LCJleHAiOjE3MTAwMjI4MjV9.mxg3Zs-0FR_FJezdP6Ds-68ED3anc88ercMaWnDVp3o
