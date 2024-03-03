@@ -39,3 +39,45 @@ Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOi
         "bio": "its a change"
     }
 }
+
+###
+
+POST http://localhost:3000/articles
+Content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwidXNlcm5hbWUiOiJqb2huZG9lIiwiaWF0IjoxNzA5NDE4MDI1LCJleHAiOjE3MTAwMjI4MjV9.mxg3Zs-0FR_FJezdP6Ds-68ED3anc88ercMaWnDVp3o
+
+{
+    "article": {
+        "title": "How to train your dragon",
+        "description": "Ever wonder how?",
+        "body": "You have to believe",
+        "tagList": ["reactjs", "angularjs", "dragons"]
+    }
+}
+
+###
+
+GET http://localhost:3000/articles/how-to-train-your-dragon-l3fg41
+Content-Type: application/json
+//Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwidXNlcm5hbWUiOiJqb2huZG9lIiwiaWF0IjoxNzA5NDE4MDI1LCJleHAiOjE3MTAwMjI4MjV9.mxg3Zs-0FR_FJezdP6Ds-68ED3anc88ercMaWnDVp3o
+
+###
+
+DELETE http://localhost:3000/articles/how-to-train-your-dragon-l3fg41
+Content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwidXNlcm5hbWUiOiJqb2huZG9lIiwiaWF0IjoxNzA5NDE4MDI1LCJleHAiOjE3MTAwMjI4MjV9.mxg3Zs-0FR_FJezdP6Ds-68ED3anc88ercMaWnDVp3o
+
+###
+
+PUT http://localhost:3000/articles/how-to-train-your-dragon-her9kh
+Content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwidXNlcm5hbWUiOiJqb2huZG9lIiwiaWF0IjoxNzA5NDE4MDI1LCJleHAiOjE3MTAwMjI4MjV9.mxg3Zs-0FR_FJezdP6Ds-68ED3anc88ercMaWnDVp3o
+
+{
+    "article": {
+        "title": "How to train your dragon2",
+        "description": "Ever wonder how?2",
+        "body": "You have to believe2",
+        "tagList": ["reactjs", "angularjs", "dragons"]
+    }
+}
